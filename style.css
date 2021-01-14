@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+p {
+    margin: 0.5em 0 0.5em 0;
+}
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    
+}
+nav a:visited,
+nav a:link {
+    color: wheat;
+    text-decoration: none;
+}
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+nav > ul > li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+main {
+    display: block;
+    background-image: url("Images/fondo.jpg");
+    padding-top: 3em;
+    padding-bottom: 25em;
+    height: 65%;
+    background-color: wheat;
+}
+footer{
+    padding: 15px;
+}
+aside,
+article {
+    padding: 2em;
+}
+aside{
+    text-align: center;
+}
+article{
+    width: 75%;
+}
+
+@media only screen and (min-width: 758px) {
+    main{
+        display: flex;
+    }
+    aside {
+        margin-left: 2%;
+    }
+    .columns-desktop{
+        display: flex;
+    }
+}
+
+.logo {
+    max-width: 60%;
+}
+h1 {
+    font-size: 3em;
+    margin-top: 0.5em;
+    color: wheat;
+}
+.subtitle {
+    background-color: orangered;
+    font-size: 1.5em;
+    padding: 10px;
+    border: solid 2px;
+}
+
+/*Catálogo */
+
+.wheels {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    background-color: wheat;
+    border: solid 3px;
+}
+.wheels img{
+    width: 100%;
+    max-height: 75%;
+    object-fit: cover;
+}
+.wheels .columns .title {
+    font-weight: bold;   
+}
+.wheels .columns .price {
+    text-align: right;
+}
+.wheels .columns {
+max-width: 100%;
+display: flex;
+}
+.wheels .columns div{
+    width: 50%;
+}
+.wheels button {
+    background-color: orangered;
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 5%;
+}
+label {
+    color: wheat;
+    padding: 3px;
+    margin: 3px;
+}
+input {
+    border: solid 2px;
+    background-color: orangered;
+    display: inline-flex;
+    border-radius: 5%;
+    margin: 3px;
+}
+.textInput {
+    background-color: wheat;
+}
